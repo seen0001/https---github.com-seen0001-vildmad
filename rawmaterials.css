@@ -1,0 +1,6 @@
+/* RAW MATERIALS */
+.rawmaterials_container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 8rem 5rem;
+}
