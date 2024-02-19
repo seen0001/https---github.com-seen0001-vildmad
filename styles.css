@@ -46,11 +46,12 @@ nav ul {
   display: flex;
   gap: 3rem;
   list-style: none;
+  margin-left: 600px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: var(--text-green);
+  color: var(--text-dark);
   font-size: 1.2rem;
   font-weight: 500;
   transition: 0.3s;
@@ -60,6 +61,18 @@ nav ul li a:hover {
   color: var(--primary-color-dark);
 }
 
+.signin_nav {
+  text-decoration: none;
+  display: inline-block;
+  padding: 11px 26px;
+  background: transparent;
+  color: var(--primary-color-dark);
+  border: 2px solid var(--primary-color-dark);
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.55s ease;
+}
 /* FOOTER */
 
 .footer__bar {
@@ -111,4 +124,20 @@ nav ul li a:hover {
   cursor: pointer;
   transition: 0.3s;
   margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .copyright {
+    font-size: 0.5rem;
+  }
+
+  .footer__bar {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+    gap: 2rem;
+  }
 }
