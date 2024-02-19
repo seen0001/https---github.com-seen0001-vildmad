@@ -8,8 +8,7 @@
 /* video*/
 .content {
   text-align: center;
-  color: var(--text-light);
-  margin-top: 450px;
+  color: var(--text-dark);
 }
 
 .content h1 {
@@ -27,17 +26,24 @@
   margin-bottom: 2rem;
 }
 
+.content img {
+  width: 350px;
+  margin: auto;
+  margin-top: 200px;
+}
+
 .content .promo {
   top: 80%;
   padding: 0.5rem;
-  width: 300px;
+  width: 130px;
   margin: auto;
-  border-radius: 2rem;
   font-size: 1.2rem;
   font-family: "Alkatra", cursive;
-  background-color: var(--button-color);
+  background-color: transparent;
+  border: 0.5px solid var(--primary-color-dark);
   transition: 0.3s;
   cursor: pointer;
+  margin-top: 50px;
 }
 
 .content .promo:hover {
