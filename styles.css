@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto:wght@400;500&family=Sedgwick+Ave+Display&display=swap");
+
+:root {
+  --primary-color: #47564c;
+  --primary-color-dark: #1f2d24;
+  --text-light: #f3f4f6;
+  --text-grey: #6b7280;
+  --text-dark: #030712;
+  --text-green: #1f2d24;
+  --button-color: #1f2d24;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* HOME */
+.main {
+  width: 100%;
+  height: 100vh;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); */
+  position: relative;
+  overflow: hidden;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 10%;
+}
+
+nav ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-green);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--primary-color-dark);
+}
+
+.content {
+  text-align: center;
+  color: var(--text-light);
+  margin-top: 450px;
+}
+
+.content h1 {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 7rem;
+}
+
+.content h1 span {
+  font-size: 5rem;
+}
+
+.content p {
+  font-family: "Alkatra", cursive;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.content .promo {
+  top: 80%;
+  padding: 0.5rem;
+  width: 300px;
+  margin: auto;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-family: "Alkatra", cursive;
+  background-color: var(--button-color);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.content .promo:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .bg__video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .bg__video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+/* CATEGORIES */
+
+.categories_container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 8rem 5rem;
+}
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+.footer__bar {
+  background-color: var(--primary-color);
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.footer__form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer__form form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__form input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--primary-color-dark);
+  font-size: 0.8rem;
+}
+
+.footer__form .btn {
+  background-color: var(--primary-color-dark);
+  color: var(--text-light);
+}
+.btn {
+  padding: 0.75rem 2rem;
+  font-size: 0.8rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+
+/* RAW MATERIALS */
+.rawmaterials_container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 8rem 5rem;
+}
+
+/* SIGN IN */
+.signin_container {
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signin_content {
+  padding: 3rem;
+  max-width: 450px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  border-radius: 5px;
+}
+.signin_content h1 {
+  color: var(--text-light);
+}
+
+.signin_form {
+  padding: 2rem 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.signin_form input {
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--text-light);
+  background-color: var(--text-dark);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.signin_form .signin_btn {
+  padding: 1rem;
+  margin-top: 2rem;
+  color: var(--text-light);
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signin_form .signin_btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.form_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-light);
+}
+
+.form_footer :is(span:hover, label:hover) {
+  cursor: pointer;
+  color: var(--text-light);
+}
+
+.login_facebook {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+.new_signup {
+  color: var(--text-light);
+  font-size: 1.25rem;
+}
+
+.new_signup span {
+  color: var(--text-light);
+}
