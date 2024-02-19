@@ -17,35 +17,57 @@
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="categories.html">Categories</a></li>
+                <li><a href="categories.html">Seasons</a></li>
                 <li><a href="rawmaterials.html">Raw materials</a></li>
             </ul>
-            <a class="signin_nav" href="login.html">Sign in</a>
+            <span><a class="signin_nav" href="login.html">Login</a>
+                <a class="signup_nav" href="login.html">Sign up</a></span>
         </nav>
     </header>
-    <main class="signin_container">
-        <div class="signin_content">
-            <h1>Sign In</h1>
-            <form class="signin_form">
-                <input type="text" placeholder="Email or phone number" name="" id="">
-                <input type="password" placeholder="Password">
-                <button class="signin_btn" type="submit">Sign In</button>
-                <div class="form_footer">
-                    <span class="remember_me">
-                        <label><input type="checkbox" /> Remember me</label>
-                    </span>
-                    <span>Need help?</span>
+    <div class="signin_container">
+        <div class="container__left">
+            <div class="signin_content">
+                <div class="signin_header">
                 </div>
-            </form>
-            <div class="footer">
-                <p class="login_facebook">
-                    <img src="" alt="">
-                    <span>Login with Facebook</span>
-                </p>
-                <p class="new_signup">New to Forest Flavours? <span>Sing up now</span>.</p>
+                <div class="form__content">
+                    <h3 class="form__title">Login</h3>
+                    <p class="form__subtitle">
+                        Welcome! Please fill your username and password to sign in to your
+                        account.
+                    </p>
+                    <form action="netlify">
+                        <input type="text" placeholder="Username" />
+                        <input type="password" placeholder="Password" />
+                        <p class="forgot__password">Forgot your password?</p>
+                        <button class="submit__btn" type="submit">Login Now</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </main>
+        <div class="container__right">
+            <div class="signin_video">
+                <video autoplay>
+                    <source src="vildmad_mp4/vildmad_hero.mp4" type="video/mp4">
+                </video>
+                <h3>Start your journey</h3>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <hr>
+
+        <div class="section__container footer__bar">
+            <div class="copyright">
+                Copyright © 2024 forest flavours. All rights reserved.
+            </div>
+            <div class="footer__form">
+                <form>
+                    <input type="text" placeholder="Enter your e-mail" />
+                    <button class="btn" type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
